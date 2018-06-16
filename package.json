@@ -1,0 +1,14 @@
+{
+  "name": "algebrarium",
+  "version": "1.0.0",
+  "description": "desktop app for maths",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Bob Walter",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^2.0.2"
+  }
+}
