@@ -52,7 +52,7 @@ app.on('ready', function() {
   // create new window
   mainWindow = new BrowserWindow({
     width: 800,
-    height: 600
+    height: process.platform == 'darwin' ? 622 : 600
   });
 
   // load html into window
