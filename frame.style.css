@@ -4,12 +4,14 @@
   display: inline-flex;
   margin: -8px;
 }
+/* BUTTONS */
 button {
   background: 0%;
   border: none;
   padding: 0;
   outline: none;
   cursor: pointer;
+  transition: 0.15s;
 }
 button:active {
   transform: translateY(3px);
@@ -38,6 +40,12 @@ button:active {
   width: 55%;
   content: url(./assets/l_green.png);
 }
+/* PANELS */
+.panel {
+  display: none;
+  animation: fadeEffect 0.2s;
+
+}
 .content_selector {
   width: 200px;
   height: 100%;
@@ -57,4 +65,12 @@ button:active {
   display: flex;
   width: 100px;
   background-color: #eee;
+}
+/* KEYFRAMES */
+@@keyframes fadeEffect {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.active {
+  display: run-in;
 }

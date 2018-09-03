@@ -30,13 +30,17 @@ if(process.env.NODE_ENV !== 'production')
     label: 'Dev Tools',
     submenu: [{
       label: 'Toggle Dev Tools',
-      accelerator: process.platform == 'darwin' ? 'Command+I' : 'Ctrl+I',
+      accelerator: process.platform == 'darwin'
+        ? 'Command+I'
+        : 'Ctrl+I',
       click(item, focusedWindow){
         focusedWindow.toggleDevTools();
       }
     },{
       label: 'Reload App',
-      accelerator: process.platform == 'darwin' ? 'Command+R' : 'Ctrl+R',
+      accelerator: process.platform == 'darwin'
+        ? 'Command+R'
+        : 'Ctrl+R',
       role: 'reload'
     }]
   });

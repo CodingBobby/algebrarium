@@ -5,7 +5,6 @@
   <title>algebrarium</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-  <script type="text/javascript" src="./frame.js"></script>
   <link type="text/css" href="./frame.style.css" rel="stylesheet">
 </head>
 
@@ -15,39 +14,62 @@
 
   <div class="tool_selector">
     <div id="button_box">
-      <button class="ico" href="#">
+      <button class="tool_button" onclick="openPanel(event, 'calculator')">
         <img src="./assets/d_green.png">
       </button>
-      <button class="ico" href="#">
+      <button class="tool_button" onclick="openPanel(event, 'wiki')">
         <img src="./assets/d_green.png">
       </button>
-      <button class="ico" href="#">
+      <button class="tool_button" onclick="openPanel(event, 'about')">
         <img src="./assets/d_green.png">
       </button>
     </div>
   </div>
 
-  <div class="content_selector">
-    <div class="content_chapter">
-      <a></a>
-      <box class="chapter_overlay"></box>
-      <ul>
-        <li id="content_title"></li>
-        <li id="content_title"></li>
-      </ul>
-    </div>
-    <div class="content_chapter">
-      <a></a>
-      <ul>
-        <li id="content_title"></li>
-      </lu>
-    </div>
-  </div>
+  <div id="panel">
 
-  <div class="content_area">
+    <!-- CALCULATOR -->
+    <div id="calculator" class="panel">
+      <div class="content_selector">
+        <h3>CALCULATOR</h3>
+        <div class="content_chapter">
+          <a></a>
+          <box class="chapter_overlay"></box>
+          <ul>
+            <li id="content_title"></li>
+            <li id="content_title"></li>
+          </ul>
+        </div>
+        <div class="content_chapter">
+          <a></a>
+          <ul>
+            <li id="content_title"></li>
+          </lu>
+        </div>
+      </div>
+
+      <div class="content_area"></div>
+    </div>
+
+    <!-- WIKI -->
+    <div id="wiki" class="panel">
+      <div class="content_selector">
+        <h3>WIKI</h3>
+      </div>
+      <div class="content_area"></div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="panel">
+      <div class="content_area">
+        <h3>ABOUT</h3>
+      </div>
+    </div>
 
   </div>
 
 </div>
+
+<script type="text/javascript" language="javascript" src="./frame.js"></script>
 </body>
 </html>
