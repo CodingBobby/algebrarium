@@ -9,6 +9,6 @@
   "author": "Bob Walter",
   "license": "MIT",
   "dependencies": {
-    "electron": "^2.0.2"
+    "electron": "^2.0.8"
   }
 }
